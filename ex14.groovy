@@ -2,7 +2,7 @@ boolean prime
 
 int count = 0
         
-        for (int i=1; count<1001 ; i++) {
+        for (int i=2; count<1000 ; i++) {
             prime = true
             
             for (int b=2; b<i; b++){
