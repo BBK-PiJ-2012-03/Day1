@@ -22,6 +22,9 @@ int num = Integer.parseInt(str)
 
 boolean prime
 int tool = 0
+int counter = 0
+
+
 
         
         for (int i=2; i<1000 ; i++) {
@@ -32,38 +35,50 @@ int tool = 0
                     prime = false
             }
             if (prime){ 
+                    
+                
 
                     if (num>i) { 
-                     tool = i
+                    counter++ 
+                    tool = i
 
                      }
 
-                               
+                            
+            }
+        }
 
-  
-                
-                       
-
-
-
+//  Tool einai o amesws mikroteros prwtos arithmos apo auton p dinei o xristis
+// Counter einai to ti noumero sti seira twn prwtwn einai autos o prwtos arithmos tool
 
 
 
-
-
-
-
-
-
-
-
-
-                    
-
-                           
+int count = 0
+int tool2 = 0
+        
+        for (int i=2; count<counter+1 ; i++) {
+            prime = true
+            
+            for (int b=2; b<i; b++){
+                if ((i%b) == 0)
+                    prime = false
+            }
+            if (prime){
+                count++
+                tool2 = i
             }
         }
 
 
-println(tool) 
+//tool2 einai o epomenos prwtos arithmos
 
+//GAMISA
+
+if ((num-tool)<(tool2-num))
+   println("The closest prime number is " +tool)
+
+if ((num-tool)>(tool2-num))
+    println("The closest prime number is " +tool2)
+
+if ((num-tool)==(tool2-num))
+   println("The closest prime numbers are " +tool+ " and " +tool2)
