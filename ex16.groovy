@@ -6,7 +6,7 @@ println ("Give me the input of the game")
 String str = System.console().readLine()
 
 while ((str!="PR") && (str!="RS") && (str!="SP") && (str!="PS") && (str!="RP") && (str!="SR") && (str!="PP") && (str!="RR") && (str!="SS"))
-{ println ("Wrong number!")
+{ println ("Wrong input!")
   break
 }
   
